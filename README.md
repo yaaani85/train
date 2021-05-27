@@ -9,13 +9,13 @@ The following ENVIRONMENT variables could be set:
 
 ```shell
 $ export MODEL_NAME='lightgbm' 
-$ EVAL_METRIC='auc' 
-$ MAX_DEPTH=1 
-$ N_ESTIMATORS=30000 
-$ LEARNING_RATE=0.05 
-$ NUM_LEAVES=4095 
-$ COLSAMPLE_BYTREE=0.28 
-$ OBJECTIVE='binary' 
-$ USE_LOCAL=True 
-$ USE_SAMPLED_DATA=True
+$ export EVAL_METRIC='auc' 
+$ export MAX_DEPTH=1 
+$ export N_ESTIMATORS=30000 
+$ export LEARNING_RATE=0.05 
+$ export NUM_LEAVES=4095 
+$ export COLSAMPLE_BYTREE=0.28 
+$ export OBJECTIVE='binary' 
+$ export USE_LOCAL=True 
+$ export USE_SAMPLED_DATA=True
 ```
