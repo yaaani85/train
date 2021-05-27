@@ -2,7 +2,7 @@
 This is an example Brane package to train a ML model. Import it as follows:
 
 ```shell
-$ brane import onnovalkering/train
+$ brane import yaaani85/train
 ```
 
 The following ENVIRONMENT variables could be set: 
