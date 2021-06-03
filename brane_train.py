@@ -66,8 +66,8 @@ def train(model_name: str, eval_metric: int, max_depth: int, n_estimators:int, l
                     verbose=False, early_stopping_rounds=100)
 
                       
-        # lgbm.booster_.save_model(f'{data_loc_prefix}boosters/{model_name}_{counter}.txt') 
-        # model_str = lgbm.booster_.model_to_string()
+        lgbm.booster_.save_model(f'{data_loc_prefix}boosters/{model_name}_{counter}.txt') 
+        model_str = lgbm.booster_.model_to_string()
         with open(f'{data_loc_prefix}boosters/{model_name}_{counter}.txt', 'wb') as f:
             # Pickle the 'data' dictionary using the highest protocol available.
             pickle.dump(lgbm, f, pickle.HIGHEST_PROTOCOL)
