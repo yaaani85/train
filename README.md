@@ -1,11 +1,11 @@
-# Train 
+## WSCBS2021 Training
 This is an example Brane package to train a ML model. Import it as follows:
 
 ```shell
 $ brane import yaaani85/wscbs2021-training
 ```
 
-The following ENVIRONMENT variables could be set: 
+The following environment variables can be set: 
 
 ```shell
 $ export MODEL_NAME='lightgbm' 
@@ -19,7 +19,8 @@ $ export OBJECTIVE='binary'
 $ export USE_LOCAL=True 
 $ export USE_SAMPLED_DATA=True
 ```
+
 You also need to push the package to be able to import it in your remote session or jupyterlab notebook:
 ```shell
-brane push train 1.0.0
+brane push training 1.0.0
 ```
