@@ -20,7 +20,7 @@ gc.enable()
 def train(model_name: str, eval_metric: int, max_depth: int, n_estimators:int, learning_rate: float, num_leaves: int, colsample_bytree: float, objective: str, use_local: bool, use_sampled_data: bool
 ) -> str:
     use_sampled_data_str = '1000' if use_sampled_data else ''
-    data_loc_prefix = '../data/' if use_local else '/data/data/'
+    data_loc_prefix = 'data/' if use_local else '/data/data/'
     model_name = f"{model_name}{use_sampled_data_str}"
   
     y_train = np.load(f'{data_loc_prefix}_train{use_sampled_data_str}.npy')
