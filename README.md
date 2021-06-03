@@ -19,3 +19,7 @@ $ export OBJECTIVE='binary'
 $ export USE_LOCAL=True 
 $ export USE_SAMPLED_DATA=True
 ```
+You also need to push the package to be able to import it in your remote session or jupyterlab notebook:
+```shell
+brane push train 1.0.0
+```
