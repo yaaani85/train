@@ -17,7 +17,7 @@ gc.enable()
 # logger = logging.getLogger('brane')
 # logger.setLevel(logging.DEBUG)
 
-def train(model_name=: str, eval_metric: int, max_depth: int, n_estimators:int, learning_rate: float, num_leaves: int, colsample_bytree: float, objective: str, use_local: bool, use_sampled_data: bool
+def train(model_name: str, eval_metric: int, max_depth: int, n_estimators:int, learning_rate: float, num_leaves: int, colsample_bytree: float, objective: str, use_local: bool, use_sampled_data: bool
 ) -> str:
     use_sampled_data_str = '1000' if use_sampled_data else ''
     data_loc_prefix = 'data/' if use_local else '/data/data/'
