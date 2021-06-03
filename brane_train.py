@@ -91,6 +91,7 @@ def train(
             early_stopping_rounds=100,
         )
 
+        os.makedirs(f"{data_loc_prefix}boosters", exist_ok=True)
         lgbm.booster_.save_model(
             f"{data_loc_prefix}boosters/{model_name}_{counter}.txt"
         )
