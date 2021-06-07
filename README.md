@@ -23,6 +23,12 @@ $ export USE_LOCAL=True
 $ export USE_SAMPLED_DATA=True
 ```
 
+For an overview of the parameters of the brane package, you can `test` the package
+```shell
+$ brane --debug test training
+```
+
+
 You also need to push the package to be able to import it in your remote session or jupyterlab notebook:
 ```shell
 brane push training 1.0.0
